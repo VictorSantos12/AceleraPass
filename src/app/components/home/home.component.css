@@ -1,0 +1,45 @@
+#main {
+   display: grid;
+   grid-template-areas: 'first' 'second second' 'third third';
+   grid-template-rows: 100vh 80vh 10vh ;
+
+}
+
+.first { grid-area:"first";
+  background-color: #000000;
+}
+
+.second { grid-area:"second";
+  background-color: #000000;
+}
+
+.third { grid-area:"third";
+  background: linear-gradient(to right, rgb(236, 93, 21), rgb(0, 0, 0))
+}
+
+.navbar {
+  background-color: #000000;
+  /* background: linear-gradient(to right, rgba(236, 93, 21, 0.22), rgb(0, 0, 0)) */
+}
+
+.title {
+  font-size: 70px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.sub-title{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.title-2 {
+  color: #ec5c15;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.label {
+  color: #ec5d1500;
+}
+
+.empresa {
+  background-color: rgb(16, 16, 16);
+}

@@ -1,0 +1,78 @@
+<section id="main" class="d-flex justify-content-center">
+ <div class="block row d-flex align-items-stretch mt-3 mb-2 shadow-lg" style="height: 95vh;">
+  <div class="first d-flex align-items-center">
+   <div class="rounded card shadow bg-body rounded bg-gradient" style=" height: 100%; background-color: #EC5C15;">
+    <div class="card-body p-5">
+     <div class="logo m-5">
+       <img src="../../../assets/logo-branca.svg" alt="">
+     </div>
+     <form
+      class="text-center"
+       (submit) = 'loginAuthetication()'
+       [formGroup] = 'formGroup'
+      >
+       <div class=" mb-4">
+         <input
+          type="email"
+          class="form-control btn-outline-light "
+          placeholder="E-mail"
+          formControlName="Email">
+       </div>
+         
+       <div class="mb-4">
+         <input
+          type="password"
+          class="form-control btn-outline-light "
+          placeholder="Senha"
+          formControlName="Senha">
+       </div>
+           
+       <div class="d-flex flex-column mt-3">
+         <button
+          type="submit"
+          class="btn btn-light">Entrar
+         <i *ngIf="loading" class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+        </button>
+         <button
+          type="button"
+          class="btn btn-outline-light mt-2">Criar Conta</button>
+       </div>
+
+     <!-- <span><p class="mt-2 text-white">ou entre com:</p></span>
+       
+     <div class="">
+       <button
+        type="button"
+        class="icon btn btn-light m-2 shadow p-3 mb-5 bg-body rounded-circle">
+        <i class="fa fa-facebook" aria-hidden="true"></i></button>
+       <button
+        type="button"
+        class="icon btn btn-light m-2 shadow p-3 mb-5 bg-body rounded-circle">
+        <i class="fa fa-google-plus" aria-hidden="true"></i></button>
+       <button
+        type="button"
+        class="icon btn btn-light m-2 shadow p-3 mb-5 bg-body rounded-circle">
+        <i class="fa fa-twitter" aria-hidden="true"></i></button>
+     </div> -->
+
+       <div class="password mt-3 ">
+         <a
+           href="#"
+           class="text-light link-light"
+           >
+           <p>Esqueci minha senha</p>
+         </a>
+       </div>
+     </form>
+    </div>
+   </div> 
+  </div>
+
+ </div>
+</section>
+
+<ngx-spinner class="text-center" bdColor="#EC5C15">
+  <i class="fa fa-spinner fa-spin text-light fa-4x" aria-hidden="true"></i>
+  <p style="font-size: 20px; color: white">Aguarde um instante</p>
+</ngx-spinner>
+
